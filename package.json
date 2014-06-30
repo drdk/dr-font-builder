@@ -4,7 +4,7 @@
   "description": "dr-font-builder\r ===============",
   "main": "index.js",
   "scripts": {
-    "test": "cp -R test/src test/_src && node main.js -c test/config.yml -i test/_src -o test/test.svg -f ttf,eot"
+    "test": "mkdir tmp && cp -R test/src tmp/_src && node main.js -c test/config.yml -i tmp/_src -o tmp/test.svg -f ttf,eot && rm -r tmp/_src"
   },
   "repository": {
     "type": "git",
