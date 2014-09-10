@@ -3,12 +3,11 @@
 var fs = require("fs");
 var path = require("path");
 
-var supportedFormats = ["svg", "ttf", "woff", "eot"];
+var supportedFormats = ["ttf", "woff", "eot"];
 
 if (require.main === module) {
 	var optimist = require("optimist")
-		.usage("Build fonts from SVG glyphs.\nUsage: $0 [file] -f [string]")
-		//.alias('c', 'config')
+		.usage("Build fonts from SVG font.\nUsage: $0 <file> -f [string] -d [string]")
 		.alias('d', 'dest')
 		.alias('f', 'formats')
 		.check(function(argv){
@@ -69,10 +68,6 @@ function build (source, dest, formats) {
 			fs.writeFileSync(path.join(dest, filename + ".eot"), new Buffer(eot.buffer));
 		}
 
-	}
-
-	if (formats.indexOf("svg") === -1) {
-		// clean up
 	}
 
 }

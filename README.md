@@ -15,13 +15,13 @@ font-builder <file> [options]
 
 #### Options
 
-* `-f, --formats [string]` - A list of formats to convert the source file too. Supported formats: `ttf`, `woff` and `eot`. Default is to export all supported formats.
+* `-f, --formats [string]` - A comma separated list of formats to convert the source file too. Supported formats: `ttf`, `woff` and `eot`. Default is to export all supported formats.
 * `-d, --dest [string]` - Destination path of the converted files. Default destination is the directory of the source file.
 
 #### Example
 
 ```
-font-builder my-font.svg -f ttf,woff
+font-builder ./my-font.svg -f ttf,woff -o ./dist
 ```
 
 

@@ -6,9 +6,6 @@
   "bin": {
     "font-builder": "./main.js"
   },
-  "scripts": {
-    "build": "node main.js -i ./dr-icon.svg -f ttf,eot"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/drdk/dr-font-builder.git"
