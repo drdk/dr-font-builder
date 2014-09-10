@@ -1,6 +1,6 @@
 {
   "name": "dr-font-builder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "dr-font-builder\r ===============",
   "main": "./main.js",
   "bin": {
